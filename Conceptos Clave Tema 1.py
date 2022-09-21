@@ -67,10 +67,10 @@ class Rectangulo:
         base = abs(self.inicial.X-self.final.X)
         print("Base del rectangulo tiene una distancia de "+str(base))
         if(self.inicial.Y<self.final.Y):
-            print("Y va del punto ("+str(self.inicial.X)+","+str(self.inicial.Y)+") hasta el punto ("+str(self.final.X)+","+str(self.inicial.Y)+")")
+            print("Y va del punto ("+str(self.inicial.X)+","+str(self.inicial.Y)+") hasta el punto ("+str(self.final.X)+","+str(self.final.Y-self.altura1())+")")
 
         if(self.inicial.Y>self.final.Y):
-            print("Y va del punto ("+str(self.final.X)+","+str(self.inicial.Y)+") hasta el punto ("+str(self.final.X)+","+str(self.final.Y)+")")
+            print("Y va del punto ("+str(self.inicial.X)+","+str(self.inicial.Y-self.altura1())+") hasta el punto ("+str(self.final.X)+","+str(self.final.Y)+")")
     
     
     def altura(self):
